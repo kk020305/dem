@@ -1,0 +1,16 @@
+app.MapGet("/", (context) =>
+{
+    context.Response.Redirect("/Users");
+    return Task.CompletedTask;
+});
+
+program.cs
+—————-
+<dt class="col-sm-2">
+    Номер пользователя
+</dt>
+<dd class="col-sm-10">
+    @Model.User.Id
+</dd>
+
+details.cshtml
